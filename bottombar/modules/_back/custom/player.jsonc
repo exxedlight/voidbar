@@ -1,0 +1,14 @@
+{
+    "custom/prev": {
+        "format": "󰙣",
+        "on-click": "playerctl previous",
+        "tooltip-format": "Previous track",
+        "min-length": 2
+    },
+    "custom/next": {
+        "format": "󰙡",
+        "on-click": "playerctl next",
+        "tooltip-format": "Next track",
+        "min-length": 2
+    }
+}

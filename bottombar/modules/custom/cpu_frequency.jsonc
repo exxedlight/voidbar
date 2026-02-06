@@ -1,0 +1,9 @@
+{
+    "custom/cpu-frequency": {
+        "exec": "grep \"cpu MHz\" /proc/cpuinfo | awk '{print int($4)}' | sort -nr | head -1",
+        "interval": 1,
+        "min-length": 5,
+        "max-length": 5,
+        "tooltip": false
+    }
+}

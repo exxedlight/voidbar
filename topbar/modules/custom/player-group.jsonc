@@ -1,0 +1,24 @@
+{
+    "group/player-module": {
+        "orientation": "horizontal",
+        "modules": [
+            "mpris",
+            "custom/cava",
+            "custom/play-count",
+            "custom/player-list-button",
+            "group/player-and-progress",
+            "group/player-title-time",
+            "custom/play-volume"
+        ]
+    },
+
+    "group/player-and-progress": {
+        "orientation": "vertical",
+        "modules": [
+            "custom/player-progress",
+            "custom/mpris-text"
+        ]
+    }
+
+
+}

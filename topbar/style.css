@@ -1,0 +1,271 @@
+/* ignore GTK theme */
+* {
+	all: initial;
+}
+
+@import "current-theme.css";
+@import "styles/fonts.css";
+@import "styles/global.css";
+@import "styles/modules-center.css";
+@import "styles/modules-left.css";
+@import "styles/modules-right.css";
+@import "styles/states.css";
+
+#custom-prev{
+	border-radius: 10px;
+	font-size: 20px;
+	padding: 0 5px;
+	padding-right: 7px;
+}
+#custom-next{
+	font-size: 20px;
+	padding: 0 5px;
+	padding-right: 7px;
+	border-radius: 10px;
+}
+#mpris{
+	padding: 0 6px;
+	border-radius: 100%;
+	margin: 0 5px;
+	/*background-color: rgba(79, 13, 141, 0.205);*/
+	font-size: 18px;
+	font-family: 'Symbols Nerd Font';
+	transition: .3s;
+	animation: mpris-button 1s infinite ease;
+	
+}
+#mpris.stopped,
+#mpris.paused{
+	
+	/*border-radius: 5px;*/
+	border: none;
+	background: radial-gradient(rgba(79, 13, 141, 0.905), transparent);
+	animation: none;
+}
+@keyframes mpris-button{
+	0% { background: radial-gradient(circle at center, rgba(79, 13, 141, 0.905) 0%, transparent); }
+	50% { background: radial-gradient(circle at center, rgba(79, 13, 141, 0.905) 50%, transparent 40%); }
+	100% { background: radial-gradient(circle at center, rgba(79, 13, 141, 0.905) 0%, transparent); }
+}
+
+#mpris:hover,
+#custom-volup:hover,
+#custom-voldown:hover{
+	background-color: rgba(79, 13, 141, 0.405);
+	color: white;
+	text-shadow: 2px 2px 2px rgba(238, 130, 238, 0.522);
+	border-radius: 100%;
+}
+
+#custom-cava{
+	color: #a3a3a3;
+	text-shadow: 1px 2px 1px rgba(194, 55, 245, 0.384);
+	font-family: 'bargraph', monospace;
+    font-size: 14px;
+	border-radius: 10px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	background: radial-gradient(ellipse at 50% 150%, rgba(166, 0, 244, 0.3), rgba(175, 35, 235, 0.1), rgba(111, 40, 141, 0.15), transparent);
+	/*border-bottom: 3px solid rgba(71, 52, 81, 0.438);*/
+	/*background: url("./trapezoid_accent.svg");*/
+	transition: .3s;
+}
+
+.modules-center{
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+	background: url('./trapezoid.svg');
+	background-size: cover;
+	padding: 0 90px;
+	padding-right: 45px;
+}
+.modules-right{
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+	background: url('./trapezoid.svg');
+	background-size: cover;
+	padding-left: 90px;
+}
+
+#custom-mpris-text{
+	font-size: 12px;
+	font-family: "Pixelon", "Pixellari",  monospace;
+	padding: 0 3px;
+	padding-top: 4.5px;
+}
+#custom-player-list-button{
+	text-shadow: 1px 1px 2px violet;
+	font-size: 18px;
+	transition: all .3s ease;
+	border: 1px solid transparent;
+}
+#custom-player-list-button:hover{
+	text-shadow: none;
+	color: rgb(197, 126, 239);
+	font-size: 18px;
+	border-top: 1px solid rgb(91, 27, 150);
+	border-bottom: 1px dotted rgb(137, 23, 203);
+	box-shadow: 2px -2px 2px rgba(71, 21, 115, 0.474);
+	padding-right: 5px;
+}
+#custom-play-volume,
+#player-count-and-time{
+	font-size: 12px;
+	background: url("./trapezoid_accent.svg");
+	background-size: cover;
+	padding: 0 10px;
+	font-family: 'Symbols Nerd Font';
+	border-radius: 5px;
+	border-top-right-radius: 4px;
+}
+#custom-play-volume{
+	padding: 0 18px;
+	font-size: 13px;
+	border-radius: 0;
+	font-family: "Pixelon", "Symbols Nerd Font", monospace;
+	text-shadow: 3px -3px 2px rgba(182, 10, 239, 0.408);
+}
+#custom-player-song-time,
+#custom-play-count{
+	font-size: 11px;
+	font-family: "Segoe UI";
+}
+
+#custom-player-progress{
+	text-shadow: 2px 2px 2px black;
+	color: violet;
+	font-family: "Symbols Nerd Font", monospace;
+	font-size: 3px;
+	text-shadow: 0 0 1px rgb(75, 19, 144);
+}
+
+
+
+
+
+
+#custom-wallpaper-type-changer{
+	font-family: 'Symbols Nerd Font';
+	font-size: 16px;
+	padding: 0 5px;
+	margin-right: 10px;
+}
+#custom-wallpaper-type-changer:hover{
+	color: rgba(255,255,255,.8);
+	text-shadow: 2px 2px 2px rgba(238, 130, 238, 0.522);
+}
+
+
+#custom-power-plan-eco,
+#custom-power-plan-balanced,
+#custom-power-plan-performance{
+	padding: 0 3px;
+	font-family: 'Symbols Nerd Font', monospace;
+	font-size: 14px;
+	border-radius: 100%;
+	margin: 0 1px;
+	transition: .3s ease-in-out;
+	color: rgba(255,255,255,.8);
+	border: 1px solid transparent;
+}
+#custom-power-plan-eco{
+	margin-left: 10px;
+}
+#custom-power-plan-performance{
+	padding: 0 3px;
+	margin-right: 10px;
+}
+
+#custom-power-plan-eco.active,
+#custom-power-plan-balanced.active,
+#custom-power-plan-performance.active{
+	border: 1px solid silver;
+}
+#custom-power-plan-eco.active{
+	border-right-color: transparent;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	background: linear-gradient(to right, black, rgba(139, 56, 208, 0.555), transparent);
+}
+#custom-power-plan-balanced.active{
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-radius: 0;
+	background: radial-gradient(rgba(139, 56, 208, 0.555), rgba(139, 56, 208, 0.555), transparent);
+}
+#custom-power-plan-performance.active{
+	border-left-color: transparent;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	background: linear-gradient(to left, black, rgba(139, 56, 208, 0.555), transparent);
+}
+
+#custom-power-plan-eco.inactive:hover,
+#custom-power-plan-balanced.inactive:hover,
+#custom-power-plan-performance.inactive:hover{
+	padding: 0 15px;
+	background-color: transparent;
+}
+#custom-power-plan-performance.inactive:hover{
+	padding-right: 0;
+}
+#custom-power-plan-eco.inactive:hover{
+	padding-left: 0;
+}
+
+#custom-hypridle{
+	transition: .3s;
+	margin-left: 2px;
+	margin-right: 5px;
+	padding-right: 3px;
+}
+#custom-hypridle:hover{
+	font-size: 22px;
+}
+#custom-hypridle.active{
+	color:rgb(151, 92, 207);
+	text-shadow: 0 0 7px rgb(24, 204, 168);
+}
+#custom-hypridle.disabled{
+	color: #b6b6b6;
+}
+
+#custom-ultrasaver{
+	font-size: 18px;
+	margin: 0 5px;
+	margin-right: 8px;
+	border-radius: 100%;
+	border: 1px dashed transparent;
+	transition: .3s;
+}
+#custom-ultrasaver.active{
+	border: 1px dashed rgb(139, 56, 208);
+	color: rgb(82, 29, 157);
+	color: rgb(166, 0, 255);
+	box-shadow: 0 0 3px rgba(139, 56, 208, 0.855); /*rgb(29, 157, 136);*/
+	margin-right: 0;
+	border-right: white;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+#custom-power-plan-eco.ultra {
+	color: rgb(28, 173, 127);
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-left: 0;
+	border: 1px dashed rgb(139, 56, 208);
+	border-left: none;
+}
+
+#custom-ultrasaver:hover{
+	font-size: 20px;
+	
+}
+
+
+#battery{
+	background-color: transparent;
+	background: url("./trapezoid_accent.svg");
+	background-size: cover;
+	padding: 0 10px;
+	padding-left: 15px;
+}

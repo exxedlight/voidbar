@@ -1,0 +1,28 @@
+{
+	"temperature#cpu": {
+		"hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+		"critical-threshold": 85,
+		"interval": 5,
+		"format-critical": "󰀦 {temperatureC}°C",
+		"format": "{icon} {temperatureC}°C",
+		"format-icons": [
+			"󱃃", "󰔏", "󱃂"
+		],
+		"min-length": 8,
+		"max-length": 8,
+		"tooltip-format": "CPU"
+	},
+	"temperature#gpu": {
+		"hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+		"critical-threshold": 85,
+		"interval": 5,
+		"format-critical": "󰀦 {temperatureC}°C",
+		"format": "{icon} {temperatureC}°C",
+		"format-icons": [
+			"󱃃", "󰔏", "󱃂"
+		],
+		"min-length": 8,
+		"max-length": 8,
+		"tooltip-format": "GPU"
+	}
+}

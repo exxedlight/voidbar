@@ -1,0 +1,9 @@
+{
+    "custom/cava": {
+        "exec": "sleep 3 && cava -p ~/.config/waybar/topbar/modules/custom/cava.conf | sed -u 's/;//g'",
+        "min-length": 16,
+        "max-length": 16,
+        "tooltip": false,
+        "on-click-middle": "audacious"
+    }
+}

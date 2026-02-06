@@ -1,0 +1,37 @@
+{
+	"mpris": {
+		"player": "audacious",
+		"ignored-players": ["vivaldi"],
+		// "interval":
+		"format": "{player_icon}",
+		"format-paused": "{status_icon}",
+		"tooltip-format": "{title} - {artist}",
+		"tooltip-format-paused": "Paused: {title} - {artist}",
+		"tooltip-format-playing": "Play: {title} - {artist}",
+		// "enable-tooltip-len-limits":playing
+		// "on-click":
+		// "on-click-middle":
+		// "on-click-right":
+		"player-icons": {
+			"default": "󰏤"
+		},
+		"status-icons": {
+			"paused": "󰐊"
+		},
+		// "artist-len":
+		// "album-len":
+		// "title-len":
+		// "dynamic-len":
+		// "dynamic-order":
+		// "dynamic-separator":
+		// "dynamic-importance-order":
+		// "truncate-hours":
+		// "ellipsis":
+		// "rotate":
+		// "min-length":
+		"max-length": 15
+		// "align":
+		// "justify":
+		// "expand":
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"hyprland/workspaces": {
+		"format": "{windows}", //  {icon}- {name}-1 {windows}-winIcons
+		"format-window-separator": " ",
+		"window-rewrite-default": "",
+		"window-rewrite": {
+			"title<.*youtube.*>": "", // titles contain "youtube"
+			"class<firefox>": "", // classes are "firefox"
+			"class<firefox> title<.*github.*>": "", // class is "firefox" and title contains "github". Note that "class" always comes first.
+			"foot": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
+			"code": "󰨞",
+			"kitty": "",
+			"vivaldi": "",
+			"Audacious": "󰐍",
+			"deadbeef": "󰐍",
+			"thunar": "",
+			"telegram": "",
+			"lutris": "",
+			"class<.*.exe>": "",
+			"draw.io": "",
+			"mpv": "",
+			"nomacs": "",
+			"subl": "",
+			"onlyoffice": "",
+			"steam": "",
+			"org.qbittorrent.qBittorrent": "󰰩",
+			"org.gnome.FileRoller": "",
+			"zen": "",
+			"class<.*calculator.*>": "󰃬",
+			"class<tk> title<.*adb.*>": "",
+			"com.exx.quickdesktop": "",
+			"title<.* - (.*) - VSCodium>": "codium $1"  // captures part of the window title and formats it into output
+		},
+		"format-icons": {
+			//"active": "",
+			"default": ""
+		},
+		"persistent-workspaces": {
+			"*": 10
+		},
+		"on-scroll-up": "hyprctl dispatch workspace -1",
+		"on-scroll-down": "hyprctl dispatch workspace +1",
+		"cursor": true
+	}
+}

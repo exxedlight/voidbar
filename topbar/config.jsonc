@@ -1,0 +1,72 @@
+{
+	"include": [
+		"~/.config/waybar/topbar/modules/extras/tray.jsonc",
+		"~/.config/waybar/topbar/modules/extras/taskbar.jsonc",
+		"~/.config/waybar/topbar/modules/custom/player.jsonc",
+		"~/.config/waybar/topbar/modules/custom/power_menu.jsonc",
+		"~/.config/waybar/topbar/modules/custom/dividers.jsonc",
+		"~/.config/waybar/topbar/modules/custom/mpris-text.jsonc",
+		"~/.config/waybar/topbar/modules/custom/wallpaper-type-changer.jsonc",
+		"~/.config/waybar/topbar/modules/custom/power_plan.jsonc",
+		"~/.config/waybar/topbar/modules/mpris.jsonc",
+		"~/.config/waybar/topbar/modules/battery.jsonc",
+		"~/.config/waybar/topbar/modules/custom/cava.jsonc",
+		"~/.config/waybar/topbar/modules/custom/player-group.jsonc"
+	],
+
+	/*------------
+	    layout
+	------------*/
+
+	"modules-left": [
+		"tray",
+		"custom/left_div#1",
+		"wlr/taskbar",
+		"custom/right_div#1"
+	],
+	"modules-center": [
+		"group/player-module"
+	],
+	"modules-right": [
+		"custom/wallpaper-type-changer",
+		"custom/ultrasaver",
+		"custom/power-plan-eco",
+		"custom/power-plan-balanced",
+		"custom/power-plan-performance",
+		"custom/hypridle",
+		"battery",
+		"custom/power_menu"
+	],
+
+	/*-------------
+	    options
+	-------------*/
+
+	// "expand-center":
+	// "expand-left":
+	// "expand-right":
+	"layer": "top",
+	// "output":
+	// "position":
+	"height": 0,
+	"width": 0,
+	"margin": 0,
+	// "margin-top": 0,
+	// "margin-left":
+	// "margin-bottom":
+	// "margin-right":
+	// "no-center":
+	"spacing": 0,
+	// "name":
+	"mode": "dock",
+	// "start_hidden":
+	// "modifier-reset":
+	// "exclusive":
+	// "fixed-center":
+	// "passthrough":
+	// "ipc":
+	// "id":
+	"reload_style_on_change": true
+	// "on-sigusr1":
+	// "on-sigusr2":
+}

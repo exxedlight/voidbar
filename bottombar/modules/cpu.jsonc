@@ -1,0 +1,28 @@
+{
+	"cpu": {
+		"interval": 1,
+		"format": "󰍛 {usage}%",
+		"format-warning": "󰀨 {usage}%",
+		"format-critical": "󰀨 {usage}%",
+		// "format-icons":
+		"min-length": 6,
+		"max-length": 6,
+		// "align":
+		// "justify":
+		// "rotate":
+		"states": {
+			"warning": 75,
+			"critical": 90
+		},
+		// "on-click":
+		// "on-click-middle":
+		// "on-click-right":
+		// "on-update":
+		// "on-scroll-up":
+		// "on-scroll-down":
+		// "smooth-scrolling-threshold":
+		//"tooltip": false,
+		"tooltip-format": "{max_frequency} GHz"
+		// "expand":
+	}
+}

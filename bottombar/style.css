@@ -1,0 +1,28 @@
+/* ignore GTK theme */
+* {
+	all: initial;
+	transition: all 0.3s ease;
+}
+
+@import "current-theme.css";
+@import "styles/fonts.css";
+@import "styles/global.css";
+@import "styles/modules-center.css";
+@import "styles/modules-left.css";
+@import "styles/modules-right.css";
+@import "styles/states.css";
+
+#custom-cpu-frequency{
+	background-color: @cpu;
+	font-size: 12px;
+	padding-top: 5px;
+	font-family: "Symbols Nerd Font", monospace;
+}
+#memory{
+	font-size: 14px;
+	font-family: 'Symbols Nerd Font', monospace;
+}
+#custom-distro:hover{
+	color: white;
+	padding: 0 30px;
+}

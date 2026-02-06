@@ -1,0 +1,38 @@
+{
+    "custom/play-volume": {
+        "exec": "echo \"  $(audtool get-volume)%\"",
+        "interval": 1,
+        "on-scroll-up": "playerctl volume 0.05+",
+		"on-scroll-down": "playerctl volume 0.05-"
+    },
+    "custom/play-count": {
+        "exec": "~/.config/waybar/scripts/audacious-count.sh",
+        "min-length": 8,
+        "max-length": 8,
+        "interval": 3
+    },
+    "custom/player-list-button": {
+        "on-click": "audtool jumptofile-show",
+        "format": "󱎸",//"󰲸",
+        "min-length": 3,
+        "max-length": 3,
+        "tooltip-format": "Playlist"
+    },
+    "custom/player-progress": {
+        "exec": "~/.config/waybar/scripts/player-progress.sh",
+        "interval": 1,
+        "align": 0,
+        "format": "*{text}$",
+        "return-type": "json"
+    },
+    "custom/player-song-time": {
+        "exec": "~/.config/waybar/scripts/player-song-time.sh",
+        "interval": 1,
+        "format": "{text}",
+        "return-type": "json",
+        "min-length": 12,
+        "max-length": 12,
+        "on-scroll-up": "exec audtool playback-seek-relative -5",
+        "on-scroll-down": "exec audtool playback-seek-relative +5"
+    }
+}

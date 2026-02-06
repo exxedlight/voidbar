@@ -1,0 +1,12 @@
+{
+	"tray": {
+		"icon-size": 16,
+		// "show-passive-items":
+		// "smooth-scrolling-threshold":
+		"spacing": 12,
+		// "reverse-direction":
+		// "on-update":
+		// "expand":
+		"cursor": true
+	}
+}
