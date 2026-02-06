@@ -32,10 +32,10 @@ For example, I creates file */etc/sudoers.d/69-exxedlight* with param:
 # SCREENSHOTS
 
 ### Top bar
-![Top bar screenshot](/screenshoots/top.png)
+![Top bar screenshot](/screenshots/top.png)
 
 ### Bottom bar
-![Bottom bar screenshot](/screenshoots/bottom.png)
+![Bottom bar screenshot](/screenshots/bottom.png)
 
 ### Full desktop example
 ![Desktop screenshot](/screenshots/desktop.png)
