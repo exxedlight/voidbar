@@ -4,6 +4,18 @@
 It`s based on [mechabar](https://github.com/sejjy/mechabar) with my own modifications and customizations.
 
 
+# SCREENSHOTS
+
+### Top bar
+![Top bar screenshot](/screenshots/top.png)
+
+### Bottom bar
+![Bottom bar screenshot](/screenshots/bottom.png)
+
+### Full desktop example
+![Desktop screenshot](/screenshots/desktop.png)
+
+
 # Dependencies
 ~ **Player:** Audacious + audtool (I use GTK version from AUR)
 ~ **Visualizer:** Cava
@@ -29,15 +41,4 @@ For example, I creates file */etc/sudoers.d/69-exxedlight* with param:
 ~ Additional button with battery and heart icon is super-saver mode, it still used *powerprofilesctl balanced* mode, and limits CPU to 0.4 GHz (minimal available on my i5-12450h).
 
 
-
-# SCREENSHOTS
-
-### Top bar
-![Top bar screenshot](/screenshots/top.png)
-
-### Bottom bar
-![Bottom bar screenshot](/screenshots/bottom.png)
-
-### Full desktop example
-![Desktop screenshot](/screenshots/desktop.png)
 
