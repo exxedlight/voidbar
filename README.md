@@ -25,6 +25,7 @@ For example, I creates file */etc/sudoers.d/69-exxedlight* with param:
 1. Power-Saver - it is NOT true power-saver mode. It`s still *powerprofilesctl balanced* mode, but with 1.0 GHz CPU limit!
 2. Balanced - it`s *powerprofilesctl balanced* mode with CPU limit 2.5 GHz.
 3. Performance - *powerprofilesctl performance* mode with CPU limit 3.0 GHz.  
+ 
 ~ Additional button with battery and heart icon is super-saver mode, it still used *powerprofilesctl balanced* mode, and limits CPU to 0.4 GHz (minimal available on my i5-12450h).
 
 
