@@ -1,7 +1,22 @@
 # VoidBar - Waybar config
 
 ~ There is my hyprland waybar config. It includes two navigation bars: one at the top and one at the bottom of the screen.
-It`s based on [mechabar](https://github.com/sejjy/mechabar) with my own modifications and customizations.
+It`s based on [mechabar](https://github.com/sejjy/mechabar) with my own modifications and customizations.  
+
+This config might two instances of waybar. It`s not default waybar file structure, so in my Hyprnald autostart config I use:
+*exec-once = waybar -c ~/.config/waybar/topbar/config.jsonc -s ~/.config/waybar/topbar/style.css &*
+*exec-once = waybar -c ~/.config/waybar/bottombar/config.jsonc -s ~/.config/waybar/bottombar/style.css &*
+
+
+# Dependencies
+~ **Terminal:** Kitty
+~ **App launcher:** Wofi
+~ **Player:** Audacious + audtool (I use GTK version from AUR)
+~ **Visualizer:** Cava
+~ **Wallpapers:** hyprpaper + mpvpaper
+~ **Power plans:** powerprofilesctl + cpupower
+~ **Fonts:** Nerd fonts for icons
+~ **System monitor:** btop
 
 
 # SCREENSHOTS
@@ -12,25 +27,21 @@ It`s based on [mechabar](https://github.com/sejjy/mechabar) with my own modifica
 ### Bottom bar
 ![Bottom bar screenshot](/screenshots/bottom.png)
 
-### Full desktop example
+### Full desktop
 ![Desktop screenshot](/screenshots/desktop.png)
 
+### Btop CPU window
+![Btop CPU Showcase](/screenshots/btop-cpu_showcase.png)
 
-# Dependencies
-~ **Player:** Audacious + audtool (I use GTK version from AUR)
-~ **Visualizer:** Cava
-~ **Wallpapers:** hyprpaper + mpvpaper
-~ **Power plans:** powerprofilesctl + cpupower
-~ **Fonts:** Nerd fonts for icons
+### Btop Memory and PowerMenu showcase
+![Btop Mem and PowerMenu](/screenshots/power-menu_btop-mem_showcase.png)
 
-# Utilities
-~ **Terminal:** Kitty
-~ **Launcher:** wofi
+
 
 ## Attention!
 ~ To use the power buttons, you need to add cpupower to the sudoers file with the NOPASSWD: parameter. Otherwise, it won't work, as cpupower requires a password by default.
-For example, I creates file */etc/sudoers.d/69-exxedlight* with param:
-*exxedlight ALL=(ALL) NOPASSWD: /usr/bin/cpupower*
+For example, create file */etc/sudoers.d/[your filename with no extention]* with param:
+*YourUsernameHere ALL=(ALL) NOPASSWD: /usr/bin/cpupower*
 
 ## Notes
 ~ Cause of some troubles with my RTX 3050, I configured powerplans to never use *power-saver* mode. So, there are three buttons:
