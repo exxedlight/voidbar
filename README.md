@@ -9,14 +9,14 @@ This config might two instances of waybar. It`s not default waybar file structur
 
 
 # Dependencies
-~ **Terminal:** Kitty
-~ **App launcher:** Wofi
-~ **Player:** Audacious + audtool (I use GTK version from AUR)
-~ **Visualizer:** Cava
-~ **Wallpapers:** hyprpaper + mpvpaper
-~ **Power plans:** powerprofilesctl + cpupower
-~ **Fonts:** Nerd fonts for icons
-~ **System monitor:** btop
+~ **Terminal:** Kitty  
+~ **App launcher:** Wofi  
+~ **Player:** Audacious + audtool (I use GTK version from AUR)  
+~ **Visualizer:** Cava  
+~ **Wallpapers:** hyprpaper + mpvpaper  
+~ **Power plans:** powerprofilesctl + cpupower  
+~ **Fonts:** Nerd fonts for icons  
+~ **System monitor:** btop  
 
 
 # SCREENSHOTS
