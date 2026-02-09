@@ -3,9 +3,9 @@
 ~ There is my hyprland waybar config. It includes two navigation bars: one at the top and one at the bottom of the screen.
 It`s based on [mechabar](https://github.com/sejjy/mechabar) with my own modifications and customizations.  
 
-This config might two instances of waybar. It`s not default waybar file structure, so in my Hyprnald autostart config I use:
-*exec-once = waybar -c ~/.config/waybar/topbar/config.jsonc -s ~/.config/waybar/topbar/style.css &*
-*exec-once = waybar -c ~/.config/waybar/bottombar/config.jsonc -s ~/.config/waybar/bottombar/style.css &*
+This config might two instances of waybar. It`s not default waybar file structure, so in my Hyprnald autostart config I use:  
+*exec-once = waybar -c ~/.config/waybar/topbar/config.jsonc -s ~/.config/waybar/topbar/style.css &*  
+*exec-once = waybar -c ~/.config/waybar/bottombar/config.jsonc -s ~/.config/waybar/bottombar/style.css &*  
 
 
 # Dependencies
