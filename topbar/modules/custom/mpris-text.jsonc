@@ -6,8 +6,6 @@
         "max-length": 35,
         "on-click": "audtool mainwin-show off; audtool mainwin-show on",
         "on-click-right": "audtool mainwin-show off",
-        "on-click-middle": "killall audacious; audacious",
-        "on-scroll-up": "exec audtool playback-seek-relative -5",
-        "on-scroll-down": "exec audtool playback-seek-relative +5"
+        "on-click-middle": "killall audacious; audacious"
     }
 }

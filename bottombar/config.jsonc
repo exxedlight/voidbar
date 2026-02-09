@@ -22,10 +22,10 @@
 	------------*/
 
 	"modules-left": [
-		"group/user",
-		"custom/left_div#1",
-		"hyprland/workspaces",
-		"custom/right_div#1"
+		//"group/user",
+		//"custom/left_div#1",
+		"hyprland/workspaces"
+		//"custom/right_div#1"
 	],
 	"modules-center": [
 		"custom/left_div#1",
@@ -53,10 +53,10 @@
 	],
 	"modules-right": [
 		"hyprland/language",
-		"custom/left_div#6",
-		"group/pulseaudio",
-		"custom/left_div#7",
-		"backlight"
+		//"custom/left_div#6",
+		"backlight",
+		//"custom/left_div#7",
+		"group/pulseaudio"
 	],
 
 	/*-------------

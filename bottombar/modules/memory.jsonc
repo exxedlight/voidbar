@@ -15,6 +15,7 @@
 		// "align":
 		// "justify":
 		// "on-click":
+		"on-click": "hyprctl clients | grep -q 'class: btop-waybar' && pkill -f 'btop -p 3' || kitty --class btop-waybar -e btop -p 3",
 		// "on-click-middle":
 		// "on-click-right":
 		// "on-update":

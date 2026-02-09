@@ -29,6 +29,7 @@
 			"class<.*calculator.*>": "󰃬",
 			"class<tk> title<.*adb.*>": "",
 			"com.exx.quickdesktop": "",
+			"class<btop.*>": "󰙭",
 			"title<.* - (.*) - VSCodium>": "codium $1"  // captures part of the window title and formats it into output
 		},
 		"format-icons": {

@@ -23,7 +23,9 @@
         "interval": 1,
         "align": 0,
         "format": "*{text}$",
-        "return-type": "json"
+        "return-type": "json",
+        "on-scroll-up": "exec audtool playback-seek-relative -5",
+        "on-scroll-down": "exec audtool playback-seek-relative +5"
     },
     "custom/player-song-time": {
         "exec": "~/.config/waybar/scripts/player-song-time.sh",

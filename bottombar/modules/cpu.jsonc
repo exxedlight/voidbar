@@ -14,9 +14,9 @@
 			"warning": 75,
 			"critical": 90
 		},
-		// "on-click":
+		//"on-click": "exec kitty -e --class \"btop-cpu\" btop -p 2",
+		"on-click": "hyprctl clients | grep -q 'class: btop-waybar' && pkill -f 'btop -p 2' || kitty --class btop-waybar -e btop -p 2",
 		// "on-click-middle":
-		// "on-click-right":
 		// "on-update":
 		// "on-scroll-up":
 		// "on-scroll-down":

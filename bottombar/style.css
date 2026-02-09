@@ -26,3 +26,55 @@
 	color: white;
 	padding: 0 30px;
 }
+
+
+.modules-left{
+	background: url("./trapezoid_left.svg");
+	background-size: cover;
+	padding: 0 10px;
+}
+#workspaces {
+	padding: 0 1px;
+	background-color: transparent;
+}
+#workspaces button{
+	color: black;
+	padding: 0 10px;
+}
+#workspaces button:hover{
+	background-color: transparent;
+	background-color: rgba(255,255,255,.1);
+}
+#workspaces button.active,
+#workspaces button.focused {
+	background: linear-gradient(to top, rgba(142, 5, 173, .8) 5%, transparent 50%);
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+#workspaces button label{
+	font-family: 'Symbols Nerd Font', monospace;
+}
+#workspaces button.active label,
+#workspaces button.focused label {
+	text-shadow: 0 0 5px rgb(144, 0, 255);
+	font-size: 16px;
+	
+}
+
+.modules-right{
+	background: url('./trapezoid_right.svg');
+	background-size: cover;
+	padding-left: 50px;
+}
+
+
+#backlight{
+	background-color: transparent;
+	padding: 0 5px;
+}
+#pulseaudio {
+	margin: 0;
+	padding: 0;
+	padding-right: 0;
+	background-color: rgba(0, 0, 0, 0.195);
+}

@@ -1,6 +1,12 @@
 {
     "custom/cpu-frequency": {
-        "exec": "grep \"cpu MHz\" /proc/cpuinfo | awk '{print int($4)}' | sort -nr | head -1",
+        // MAX FREQ AROUND ALL CORES
+        //"exec": "grep \"cpu MHz\" /proc/cpuinfo | awk '{print int($4)}' | sort -nr | head -1",
+        
+        // AVG FREQ
+        //"exec": "awk '/cpu MHz/ {s+=$4; c++} END {printf \"%.0f\", s/c}' /proc/cpuinfo",
+        "exec": "cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_cur_freq 2>/dev/null | sort -nr | head -1 | awk '{printf \"%.0f\", $1/1000}'",
+        "on-click": "hyprctl clients | grep -q 'class: btop-waybar' && pkill -f 'btop -p 2' || kitty --class btop-waybar -e btop -p 2",
         "interval": 1,
         "min-length": 5,
         "max-length": 5,

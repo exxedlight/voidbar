@@ -13,10 +13,10 @@
 #custom-left_div.6 {
 	color: @volume;
 }
-#pulseaudio,
+/*#pulseaudio,
 #wireplumber {
 	background-color: @volume;
-}
+}*/
 
 /*----------------
     brightness
@@ -26,9 +26,9 @@
 	background-color: @volume;
 	color: @backlight;
 }
-#backlight {
+/*#backlight {
 	background-color: @backlight;
-}
+}*/
 
 /*-------------
     battery

@@ -14,14 +14,14 @@
 #custom-right_div.1 {
 	color: @workspaces;
 }
-#workspaces {
+/*#workspaces {
 	padding: 0 1px;
 	background-color: @workspaces;
 }
 #workspaces button.active label,
 #workspaces button.focused label {
 	color: @accent;
-}
+}*/
 
 /*------------------
     window title
