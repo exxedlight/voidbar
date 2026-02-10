@@ -8,6 +8,6 @@
 		// "on-update":
 		// "expand":
 		// "icons":
-		"cursor": true
+		"cursor": false
 	}
 }

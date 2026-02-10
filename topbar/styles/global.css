@@ -43,10 +43,19 @@ tooltip > box {
 #tray menu{
 	background: linear-gradient(to right, rgba(0,0,0,.5), transparent);
 	border-radius: 10px;
-	padding: 5px;
+	padding: 10px;
 	border: 1px solid silver;
 	border-left: none;
 	border-top: none;
+}
+#tray menu *{
+	font-size: 14px;
+	transition: all .1s ease;
+	padding: 0 5px;
+}
+#tray menu *:hover{
+	background-color: rgba(255,255,255,.1);
+	border-radius: 15px;
 }
 
 #taskbar{
