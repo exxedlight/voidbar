@@ -24,22 +24,19 @@
 	border-radius: 10px;
 }
 #mpris{
-	padding: 0 6px;
+	padding: 0 1px;
 	border-radius: 100%;
 	margin: 0 5px;
-	/*background-color: rgba(79, 13, 141, 0.205);*/
 	font-size: 18px;
 	font-family: 'Symbols Nerd Font';
 	transition: .3s;
-	animation: mpris-button 1s infinite ease;
-	
+	animation: mpris-button 1s infinite ease;	
 }
 #mpris.stopped,
 #mpris.paused{
-	
 	/*border-radius: 5px;*/
 	border: none;
-	background: radial-gradient(rgba(79, 13, 141, 0.905), transparent);
+	text-shadow: 0 0 5px rgb(109, 11, 200);
 	animation: none;
 }
 @keyframes mpris-button{
@@ -71,6 +68,11 @@
 	transition: .3s;
 }
 
+.modules-left{
+	background: url('./trapezoid-left-modules.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 .modules-center{
 	/*background-color: rgba(0, 0, 0, 0.3);*/
 	background: url('./trapezoid.svg');
@@ -218,7 +220,7 @@
 	padding-right: 3px;
 }
 #custom-hypridle:hover{
-	font-size: 22px;
+	font-size: 20px;
 }
 #custom-hypridle.active{
 	color:rgb(151, 92, 207);
@@ -229,22 +231,25 @@
 }
 
 #custom-ultrasaver{
-	font-size: 18px;
-	margin: 0 5px;
-	margin-right: 8px;
+	font-size: 16px;
 	border-radius: 100%;
 	border: 1px dashed transparent;
 	transition: .3s;
+	padding: 0;
+	margin: 0;
 }
 #custom-ultrasaver.active{
 	border: 1px dashed rgb(139, 56, 208);
-	color: rgb(82, 29, 157);
 	color: rgb(166, 0, 255);
-	box-shadow: 0 0 3px rgba(139, 56, 208, 0.855); /*rgb(29, 157, 136);*/
+	/*box-shadow: 0 0 3px rgba(139, 56, 208, 0.855);*/ /*rgb(29, 157, 136);*/
 	margin-right: 0;
-	border-right: white;
+	border-right: transparent;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
+	
+}
+#custom-ultrasaver:hover{
+	text-shadow: 2px 2px 2px rgb(86, 144, 86);
 }
 
 #custom-power-plan-eco.ultra {
@@ -256,10 +261,7 @@
 	border-left: none;
 }
 
-#custom-ultrasaver:hover{
-	font-size: 20px;
-	
-}
+
 
 
 #battery{
@@ -268,4 +270,52 @@
 	background-size: cover;
 	padding: 0 10px;
 	padding-left: 15px;
+}
+
+
+
+
+
+#tray{
+	padding-left: 10px;
+	padding-right: 15px;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	background: url("./trapezoid-left-modules.svg");
+	background-color: rgba(81, 0, 142, 0.2);
+	background-size: cover;
+}
+#tray menu{
+	background: linear-gradient(to right, rgba(0,0,0,.5), transparent);
+	border-radius: 10px;
+	padding: 10px;
+	border: 1px solid silver;
+	border-left: none;
+	border-top: none;
+}
+#tray menu *{
+	font-size: 14px;
+	transition: all .1s ease;
+	padding: 0 5px;
+}
+#tray menu *:hover{
+	background-color: rgba(255,255,255,.1);
+	border-radius: 15px;
+}
+
+
+
+
+#taskbar {
+	padding: 0 10px;
+}
+#taskbar button{
+	padding: 0 5px;
+	margin-right: 3px;
+	background-color: transparent;
+	border-radius: 0;
+}
+#taskbar button:hover{
+	background: linear-gradient(to top, rgba(142, 5, 173, .8) 5%, transparent 50%);
 }

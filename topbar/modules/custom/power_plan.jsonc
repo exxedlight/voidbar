@@ -48,9 +48,9 @@
         "on-click": "~/.config/waybar/scripts/ultrasaver-toogle.sh",
         "interval": 1,
         "return-type": "json",
-        "format": "󱈏",
-        "min-length": 2,
-        "max-length": 2,
+        "format": "󱈑",
+        "min-length": 3,
+        "max-length": 3,
         "tooltip-format": "Ultra power saver"
     }
 }

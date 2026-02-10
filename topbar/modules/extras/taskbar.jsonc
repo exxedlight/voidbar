@@ -16,6 +16,6 @@
 		"ignore-list": [ "kitty" ],
 		// "app_ids-mapping":
 		// "rewrite":
-		"cursor": true
+		"cursor": false
 	}
 }
