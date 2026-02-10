@@ -44,8 +44,8 @@
 		// "on-update":
 		/*"on-scroll-up": "~/.config/waybar_bottom/scripts/volume.sh output raise",
 		"on-scroll-down": "~/.config/waybar_bottom/scripts/volume.sh output lower",*/
-		"on-scroll-up": "exec pactl set-sink-volume @DEFAULT_SINK@ +2%",
-		"on-scroll-down": "exec pactl set-sink-volume @DEFAULT_SINK@ -2%",
+		"on-scroll-up": "exec pactl set-sink-volume @DEFAULT_SINK@ +1%",
+		"on-scroll-down": "exec pactl set-sink-volume @DEFAULT_SINK@ -1%",
 		// "smooth-scrolling-threshold":
 		// "tooltip":
 		"tooltip-format": "<b>Output Device</b>: {desc}"

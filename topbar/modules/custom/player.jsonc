@@ -24,8 +24,10 @@
         "align": 0,
         "format": "*{text}$",
         "return-type": "json",
+        "cursor": false,
         "on-scroll-up": "exec audtool playback-seek-relative -5",
-        "on-scroll-down": "exec audtool playback-seek-relative +5"
+        "on-scroll-down": "exec audtool playback-seek-relative +5",
+        "on-click": "exec ~/.config/waybar/scripts/player-mouse-seek.sh"
     },
     "custom/player-song-time": {
         "exec": "~/.config/waybar/scripts/player-song-time.sh",
