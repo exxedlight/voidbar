@@ -19,9 +19,9 @@
 	------------*/
 
 	"modules-left": [
-		"tray",
+		"tray"
 		//"custom/left_div#1",
-		"wlr/taskbar"
+		//"wlr/taskbar"
 		//"custom/right_div#1"
 	],
 	"modules-center": [
