@@ -35,7 +35,7 @@ main() {
 	local selected; selected=$(printf "%s\n" "${list[@]}" | fzf "${opts[@]}")
 
 	case $selected in
-		"Lock") setsid swaylock >/dev/null 2>&1 ;;
+		"Lock") setsid hyprlock >/dev/null 2>&1 ;;
 		"Shutdown") systemctl poweroff ;;
 		"Reboot") systemctl reboot ;;
 		"Logout") loginctl terminate-session "$XDG_SESSION_ID" ;;

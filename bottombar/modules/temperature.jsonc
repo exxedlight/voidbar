@@ -24,5 +24,12 @@
 		"min-length": 8,
 		"max-length": 8,
 		"tooltip-format": "GPU"
+	},
+	"group/gpu": {
+		"orientation": "horizontal",
+		"modules": [
+			"custom/gpu-state",
+			"temperature#gpu"
+		]
 	}
 }

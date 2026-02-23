@@ -4,6 +4,7 @@
         "min-length": 16,
         "max-length": 16,
         "tooltip": false,
-        "on-click-middle": "audacious"
+        "on-click-middle": "audacious",
+        "cursor": false
     }
 }

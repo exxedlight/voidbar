@@ -4,7 +4,7 @@
 		"format": "{:%H:%M:%S}",
 		// "timezone":
 		// "timezones":
-		// "locale":
+		//"locale": "ru_UA.UTF-8",
 		"min-length": 12,
 		"max-length": 12,
 		// "rotate": 0,
@@ -28,12 +28,12 @@
 
 	"clock#date": {
 		// "interval":
-		"format": "󰸗 {:%d.%m}",
+		"format": "󰸗 {:%d.%m %a}",
 		// "timezone":
 		// "timezones":
-		// "locale":
-		"min-length": 8,
-		"max-length": 8,
+		//"locale": "en_US.UTF-8",
+		"min-length": 12,
+		"max-length": 12,
 		// "rotate":
 		// "on-click":
 		// "on-click-middle":

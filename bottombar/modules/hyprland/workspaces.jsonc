@@ -1,13 +1,14 @@
 {
 	"hyprland/workspaces": {
-		"format": "{windows}", //  {icon}- {name}-1 {windows}-winIcons
+		//"format": "<span size='7pt' fgalpha='30%'>{name}</span>{windows}", //  {icon}- {name}-1 {windows}-winIcons
+		"format": "{windows}",
 		"format-window-separator": " ",
 		"window-rewrite-default": "",
 		"window-rewrite": {
-			"title<.*youtube.*>": "", // titles contain "youtube"
-			"class<firefox>": "", // classes are "firefox"
-			"class<firefox> title<.*github.*>": "", // class is "firefox" and title contains "github". Note that "class" always comes first.
-			"foot": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
+			"title<.*youtube.*>": "",
+			"class<firefox>": "",
+			"class<firefox> title<.*github.*>": "",
+			"foot": "",
 			"code": "󰨞",
 			"kitty": "",
 			"vivaldi": "",
@@ -22,6 +23,7 @@
 			"nomacs": "",
 			"subl": "",
 			"onlyoffice": "",
+			"libreoffice-writer": "",
 			"steam": "",
 			"org.qbittorrent.qBittorrent": "󰰩",
 			"org.gnome.FileRoller": "",
@@ -32,7 +34,7 @@
 			"class<btop.*>": "󰙭",
 			"Postman": "󱂛",
 			"Anydesk": "",
-			"title<.* - (.*) - VSCodium>": "codium $1"  // captures part of the window title and formats it into output
+			"class<VirtualBox.*>": ""
 		},
 		"format-icons": {
 			//"active": "",
@@ -43,6 +45,6 @@
 		},
 		"on-scroll-up": "hyprctl dispatch workspace -1",
 		"on-scroll-down": "hyprctl dispatch workspace +1",
-		"cursor": true
+		"cursor": false
 	}
 }

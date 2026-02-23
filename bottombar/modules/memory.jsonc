@@ -10,8 +10,8 @@
 			"warning": 75,
 			"critical": 90
 		},
-		"min-length": 13,
-		"max-length": 13,
+		"min-length": 15,
+		"max-length": 15,
 		// "align":
 		// "justify":
 		// "on-click":

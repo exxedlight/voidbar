@@ -1,0 +1,10 @@
+{
+    "custom/gpu-state": {
+        "exec": "~/.config/waybar/scripts/nvidia-probe.sh",
+        "return-type": "json",
+        "interval": 3,
+        "format": "󰻇",
+        "min-length": 2,
+        "max-length": 2
+    }
+}

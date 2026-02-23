@@ -14,7 +14,8 @@
 		"~/.config/waybar/bottombar/modules/pulseaudio.jsonc",
 		"~/.config/waybar/bottombar/modules/backlight.jsonc",
 		"~/.config/waybar/bottombar/modules/custom/dividers.jsonc",
-		"~/.config/waybar/bottombar/modules/custom/cpu_frequency.jsonc"
+		"~/.config/waybar/bottombar/modules/custom/cpu_frequency.jsonc",
+		"~/.config/waybar/bottombar/modules/custom/gpu-state.jsonc"
 	],
 
 	/*------------
@@ -29,7 +30,8 @@
 	],
 	"modules-center": [
 		"custom/left_div#1",
-		"temperature#gpu",
+		"group/gpu",
+		//"temperature#gpu",
 		"temperature#cpu",
 		"custom/left_div#3",
 		"cpu",
