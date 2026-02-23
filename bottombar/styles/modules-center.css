@@ -17,7 +17,7 @@
 	color: @temperature;
 }
 #temperature {
-	background-color: @temperature;
+	background-color: transparent;
 }
 
 /*------------
@@ -38,11 +38,11 @@
 ---------*/
 
 #custom-left_div.4 {
-	background-color: @cpu;
+	background-color: transparent;
 	color: @memory;
 }
 #cpu {
-	background-color: @cpu;
+	background-color: transparent;
 }
 #cpu.span{
 	background-color: red;
@@ -86,7 +86,7 @@
 	font-size: 15px;
 }
 #custom-right_div.3 {
-	background-color: @date;
+	background-color: transparent;
 	color: @time;
 }
 
@@ -96,7 +96,7 @@
 
 #clock.date {
 	padding-left: 6px;
-	background-color: @date;
+	background-color: transparent;
 }
 #custom-right_div.4 {
 	background-color: @tray;
@@ -108,15 +108,15 @@
 -----------------*/
 
 #network {
-	background-color: @tray;
+	background-color: transparent;
 	padding: 0 6px 0 4px;
 }
 #bluetooth {
-	background-color: @tray;
+	background-color: transparent;
 	padding: 0 5px;
 }
 #custom-system_update {
-	background-color: @tray;
+	background-color: transparent;
 	padding: 0 8px 0 2px;
 }
 #custom-right_div.5 {

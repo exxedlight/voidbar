@@ -114,6 +114,7 @@
 	font-size: 12px;
 	background: url("./trapezoid_accent.svg");
 	background-size: cover;
+	margin: 0;
 	padding: 0 10px;
 	font-family: 'Symbols Nerd Font';
 	border-radius: 5px;
