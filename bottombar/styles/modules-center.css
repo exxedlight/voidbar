@@ -74,6 +74,8 @@
 }
 #idle_inhibitor {
 	background-color: @distro-sides;
+	padding: 0;
+	margin: 0;
 }
 
 /*----------
@@ -83,7 +85,10 @@
 #clock.time {
 	/*padding-right: 6px;*/
 	background-color: @distro-sides;
-	font-size: 15px;
+	font-size: 15.5px;
+	padding: 0;
+	padding-bottom: 0px;
+	margin: 0;
 }
 #custom-right_div.3 {
 	background-color: transparent;

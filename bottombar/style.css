@@ -19,8 +19,10 @@
 	font-family: "Symbols Nerd Font", monospace;
 }
 #memory{
-	font-size: 14px;
+	font-size: 15px;
 	font-family: 'Symbols Nerd Font', monospace;
+	padding-left: 5px;
+	padding-bottom: 2px;
 }
 #custom-distro:hover{
 	color: white;
@@ -101,8 +103,8 @@
 	background-color: transparent;
 }
 #custom-gpu-state.available{
-	color: rgb(11, 118, 151);
-	text-shadow: 2px 2px 2px rgba(0, 238, 255, 0.414);
+	color: rgb(173, 59, 243);
+	text-shadow: 0 0 3px rgba(0, 217, 255, 0.58);
 }
 #custom-gpu-state.unavailable{
 	color: rgb(87, 87, 87);

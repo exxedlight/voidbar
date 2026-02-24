@@ -5,8 +5,8 @@
 		// "timezone":
 		// "timezones":
 		//"locale": "ru_UA.UTF-8",
-		"min-length": 12,
-		"max-length": 12,
+		"min-length": 10,
+		"max-length": 10,
 		// "rotate": 0,
 		// "on-click":
 		// "on-click-middle":
