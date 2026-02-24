@@ -28,6 +28,7 @@
         "on-scroll-up": "exec audtool playback-seek-relative -5",
         "on-scroll-down": "exec audtool playback-seek-relative +5",
         "on-click": "exec ~/.config/waybar/scripts/player-mouse-seek.sh"
+        //"on-click": "~/.config/waybar/scripts/player-mouse-seek.ts"
     },
     "custom/player-song-time": {
         "exec": "~/.config/waybar/scripts/player-song-time.sh",

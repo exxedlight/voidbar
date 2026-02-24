@@ -29,7 +29,7 @@
 	color: @cpu;
 }
 #memory {
-	background-color: @memory;
+	background-color: black;
 	font-size: 15px;
 }
 
@@ -67,10 +67,10 @@
 --------------------*/
 
 #custom-right_inv.1 {
-	color: @time;
+	color: black;
 }
 #idle_inhibitor {
-	background-color: @time;
+	background-color: black;
 }
 
 /*----------

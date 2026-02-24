@@ -1,5 +1,3 @@
-/* catppuccin mocha */
-
 @define-color rosewater     #f5e0dc;
 @define-color flamingo      #f2cdcd;
 @define-color pink          #f5c2e7;
@@ -26,6 +24,10 @@
 @define-color base          #1e1e2e;
 @define-color mantle        #181825;
 @define-color crust         #11111b;
+@define-color semi-black	alpha(#3e194d, 0.4);
+
+
+
 
 /*
 	br - border
@@ -55,6 +57,7 @@
 @define-color volume        @mantle;
 @define-color backlight     @base;
 @define-color battery       @surface0;
+@define-color distro-sides	@semi-black;
 
 /* state colors */
 
