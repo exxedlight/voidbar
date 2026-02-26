@@ -3,7 +3,7 @@
 ~ There is my hyprland waybar config. It includes two navigation bars: one at the top and one at the bottom of the screen.
 It`s based on [mechabar](https://github.com/sejjy/mechabar) with my own modifications and customizations.  
 
-This config might two instances of waybar. It`s not default waybar file structure, so in my Hyprnald autostart config I use:  
+This config might two instances of waybar. It`s not default waybar file structure, so in my Hyprland autostart config I use:  
 *exec-once = waybar -c ~/.config/waybar/topbar/config.jsonc -s ~/.config/waybar/topbar/style.css &*  
 *exec-once = waybar -c ~/.config/waybar/bottombar/config.jsonc -s ~/.config/waybar/bottombar/style.css &*  
 
@@ -50,6 +50,3 @@ For example, create file */etc/sudoers.d/[your filename with no extention]* with
 3. Performance - *powerprofilesctl performance* mode with CPU limit 3.0 GHz.  
  
 ~ Additional button with battery and heart icon is super-saver mode, it still used *powerprofilesctl balanced* mode, and limits CPU to 0.4 GHz (minimal available on my i5-12450h).
-
-
-
