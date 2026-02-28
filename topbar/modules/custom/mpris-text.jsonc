@@ -1,12 +1,17 @@
 {
-    "custom/mpris-text": {
-        "exec": "playerctl metadata --format '{{title}} - {{artist}}' --player=audacious",
-        //"exec": "audtool current-song",
-        "interval": 1,
-        "min-length": 35,
-        "max-length": 35,
-        "on-click": "audtool mainwin-show off; audtool mainwin-show on",
-        "on-click-right": "audtool mainwin-show off",
-        "on-click-middle": "killall -9 audacious"
-    }
+  "custom/mpris-text": {
+    "exec": "playerctl metadata --format '{{title}} - {{artist}}' --player=audacious",
+    //"exec": "audtool current-song",
+    "interval": 1,
+    "min-length": 35,
+    "max-length": 35,
+
+    //"on-click": "audtool mainwin-show off; audtool mainwin-show on",
+
+    // --> left click toogle
+    "on-click": "hyprctl clients -j | jq -e '.[] | select(.class == \"Audacious\" and .mapped)' >/dev/null && audtool mainwin-show off || audtool mainwin-show on",
+
+    "on-click-right": "audtool mainwin-show off",
+    "on-click-middle": "killall -9 audacious",
+  },
 }
