@@ -47,7 +47,7 @@
 	background-color: transparent;
 }
 #workspaces button{
-	padding: 0 8px;
+	padding: 0 6px;
 	padding-right: 10px;
 	border-radius: 0px;
 	transition: all .4s ease;
@@ -108,4 +108,18 @@
 }
 #custom-gpu-state.unavailable{
 	color: rgb(87, 87, 87);
+}
+
+#custom-crop-toogle{
+    padding-right: 5px;
+    margin-right: 10px;
+}
+
+#custom-hider{
+    font-size: 18px;
+    color: rgba(255,255,255,.2);
+}
+#custom-hider:hover{
+    color: rgba(255,255,255,.4);
+    text-shadow: 0 0 5px rgba(173, 59, 243, .3);
 }

@@ -41,8 +41,8 @@
 		"events": {
 			"on-discharging-warning": "notify-send 'Battery Low (20%)' -u critical -i 'battery-020' -h string:x-canonical-private-synchronous:battery",
 			"on-discharging-critical": "notify-send 'Battery Critical (10%)' -u critical -i 'battery-010' -h string:x-canonical-private-synchronous:battery",
-			"on-discharging-off": "systemctl poweroff",
-			"on-charging-100": "notify-send --app-name 'silent-notify' 'Battery Full (100%)' -i 'battery-100-charged' -h string:x-canonical-private-synchronous:battery"
+			"on-discharging-off": "systemctl poweroff"
+			//"on-charging-100": "notify-send --app-name 'silent-notify' 'Battery Full (100%)' -i 'battery-100-charged' -h string:x-canonical-private-synchronous:battery"
 		}
 	}
 }

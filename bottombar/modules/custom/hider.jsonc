@@ -1,0 +1,10 @@
+{
+  "custom/hider": {
+    "format": "", //"",//"",
+    "min-length": 1,
+    "max-length": 1,
+    "cursor": false,
+    "tooltip": false,
+    "on-click": "hyprctl dispatch workspace empty"
+  }
+}
