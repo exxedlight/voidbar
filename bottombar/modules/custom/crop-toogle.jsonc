@@ -4,6 +4,7 @@
     "min-length": 2,
     "max-length": 2,
     "cursor": false,
+    "tooltip": false,
     "on-click": "grimblast copy area",
     "on-click-right": "~/.config/waybar/scripts/toogle-crop-screenshot.sh"
   }

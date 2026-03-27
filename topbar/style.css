@@ -54,18 +54,23 @@
 	border-radius: 100%;
 }
 
-#custom-cava{
+#custom-cava-top,
+#custom-cava-bottom{
 	color: #a3a3a3;
-	text-shadow: 1px 2px 1px rgba(194, 55, 245, 0.384);
 	font-family: 'bargraph', monospace;
-    font-size: 14px;
-	border-radius: 10px;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-	background: radial-gradient(ellipse at 50% 150%, rgba(166, 0, 244, 0.3), rgba(175, 35, 235, 0.1), rgba(111, 40, 141, 0.15), transparent);
-	/*border-bottom: 3px solid rgba(71, 52, 81, 0.438);*/
-	/*background: url("./trapezoid_accent.svg");*/
+    font-size: 12px;
 	transition: .3s;
+	padding: 0;
+	text-shadow: -1px -2px 1px rgba(194, 55, 245, 0.384);
+}
+#custom-cava-bottom{
+	padding-right: 3px;
+	text-shadow: -1px 2px 1px rgba(194, 55, 245, 0.384);
+}
+#cava{
+	background: radial-gradient(ellipse at 50% 150%, rgba(166, 0, 244, 0.3), rgba(175, 35, 235, 0.1), rgba(111, 40, 141, 0.15), transparent);
+	border-radius: 10px;
+	padding: 0 10px;
 }
 
 .modules-left{

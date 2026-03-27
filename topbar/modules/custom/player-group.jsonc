@@ -3,7 +3,8 @@
         "orientation": "horizontal",
         "modules": [
             "mpris",
-            "custom/cava",
+            //"custom/cava",
+            "group/cava",
             "custom/play-count",
             "custom/player-list-button",
             "group/player-and-progress",

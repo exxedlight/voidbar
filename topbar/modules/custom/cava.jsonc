@@ -1,10 +1,26 @@
 {
-    "custom/cava": {
-        "exec": "killall cava; cava -p ~/.config/waybar/topbar/modules/custom/cava.conf | sed -u 's/;//g'",
+    "custom/cava-top": {
+        "exec": "killall cava; cava -p ~/.config/waybar/topbar/modules/custom/cava_top.conf | sed -u 's/;//g'",
         "min-length": 16,
         "max-length": 16,
         "tooltip": false,
         "on-click-middle": "audacious",
         "cursor": false
+    },
+    "custom/cava-bottom": {
+        "exec": "killall cava; cava -p ~/.config/waybar/topbar/modules/custom/cava_bottom.conf | sed -u 's/;//g'",
+        "min-length": 16,
+        "max-length": 16,
+        "tooltip": false,
+        "on-click-middle": "audacious",
+        "cursor": false,
+        "rotate": 180
+    },
+    "group/cava": {
+      "orientation": "vertical",
+      "modules": [
+        "custom/cava-top",
+        "custom/cava-bottom"
+      ]
     }
 }
