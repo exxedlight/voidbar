@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Путь к видео
-VIDEO="~/Env/Wallpapers/Video/FireKeeper.mp4"
+VIDEO="~/Env/Wallpapers/Video/FireKeeper.mp4" # path to the video file for mpvpaper
 OUTPUT="eDP-1"
 
 stop_both() {

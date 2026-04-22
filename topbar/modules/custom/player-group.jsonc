@@ -8,7 +8,7 @@
             "custom/play-count",
             "custom/player-list-button",
             "group/player-and-progress",
-            "group/player-title-time",
+            //"group/player-title-time",
             "custom/play-volume"
         ]
     },

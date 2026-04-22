@@ -9,13 +9,13 @@
       "class<firefox|zen>": "",
       "class<firefox> title<.*github.*>": "",
       "class<code|dev.zed.Zed>": "󰨞",
+      "class<.*.exe>": "",
       "kitty": "",
       "vivaldi": "",
       "Audacious|deadbeef": "󰐍",
       "thunar": "",
       "telegram": "",
       "lutris": "",
-      "class<.*.exe>": "",
       "draw.io": "",
       "mpv": "",
       "nomacs": "",
@@ -32,7 +32,10 @@
       "Postman": "󱂛",
       "Anydesk": "",
       "class<VirtualBox.*>": "",
-      "krita": ""
+      "krita": "",
+      "sai2.exe": "",
+      "qpdfview.local.qpdfview": "",
+      "unityhub|Unity": ""
     },
     "format-icons": {
       //"active": "",
