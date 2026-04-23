@@ -12,7 +12,17 @@
 		"max-length": 8,
 		"tooltip-format": "CPU"
 	},
-	"temperature#gpu": {
+	
+	"custom/nvidia-temp": {
+	  "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader",
+		"interval": 5,
+		"format": "󱃃 {}°C",
+		"min-length": 8,
+		"max-length": 8,
+		"tooltip-format": "GPU"
+	},
+	
+	/*"temperature#gpu": {
 		"hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
 		"critical-threshold": 85,
 		"interval": 5,
@@ -24,12 +34,13 @@
 		"min-length": 8,
 		"max-length": 8,
 		"tooltip-format": "GPU"
-	},
+	},*/
 	"group/gpu": {
 		"orientation": "horizontal",
 		"modules": [
 			"custom/gpu-state",
-			"temperature#gpu"
+			//"temperature#gpu"
+			"custom/nvidia-temp"
 		]
 	}
 }
