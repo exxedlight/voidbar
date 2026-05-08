@@ -9,8 +9,8 @@
 # License: MIT
 
 # shellcheck disable=SC1090
-colors=()
-source ~/.config/waybar/scripts/fzf-theme.sh &> /dev/null || true
+#colors=()
+#source ~/.config/waybar/scripts/fzf-theme.sh &> /dev/null || true
 
 main() {
 	local list=(
@@ -18,7 +18,6 @@ main() {
 		"Shutdown"
 		"Reboot"
 		"Logout"
-		"Hibernate"
 		"Suspend"
 	)
 	local opts=(
@@ -29,7 +28,7 @@ main() {
 		"--no-input"
 		"--pointer="
 		"--reverse"
-		"${colors[@]}"
+		#"${colors[@]}"
 	)
 
 	local selected; selected=$(printf "%s\n" "${list[@]}" | fzf "${opts[@]}")
@@ -38,9 +37,12 @@ main() {
 		"Lock") setsid hyprlock >/dev/null 2>&1 ;;
 		"Shutdown") systemctl poweroff ;;
 		"Reboot") systemctl reboot ;;
-		"Logout") loginctl terminate-session "$XDG_SESSION_ID" ;;
-		"Hibernate") systemctl hibernate ;;
-		"Suspend") setsid swaylock >/dev/null 2>&1 && systemctl suspend ;;
+		"Logout") hyprctl dispatch exit ;;
+		"Suspend") 
+		    setsid -f hyprlock >/dev/null 2>&1
+			sleep 1.5
+            systemctl suspend 
+            ;;
 		*) exit 1 ;;
 	esac
 }
