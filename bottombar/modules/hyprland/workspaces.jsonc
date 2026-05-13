@@ -42,13 +42,15 @@
     },
     "format-icons": {
       //"active": "",
-      "default": "",
+      "default": ""
     },
     "persistent-workspaces": {
-      "*": 10,
+      "*": 10
     },
-    "on-scroll-up": "hyprctl dispatch workspace -1",
-    "on-scroll-down": "hyprctl dispatch workspace +1",
-    "cursor": false,
-  },
+    //"on-scroll-up": "hyprctl eval 'hl.dispatch(hl.dsp.focus({ workspace = \"-1\" }))'",
+    //"on-scroll-down": "hyprctl eval 'hl.dispatch(hl.dsp.focus({ workspace = \"+1\" }))'",
+    "on-scroll-up": "",
+    "cursor": false
+    //"on-click-window": "~/.config/waybar/scripts/hyprland-workspace-click.sh {address} {button}"
+  }
 }
