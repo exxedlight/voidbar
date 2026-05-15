@@ -5,6 +5,6 @@
     "max-length": 1,
     "cursor": false,
     //"tooltip": false,
-    "on-click": "hyprctl dispatch workspace empty"
+    "on-click": "hyprctl eval 'hl.dispatch(hl.dsp.focus({ workspace = \"empty\" }))'"
   }
 }
