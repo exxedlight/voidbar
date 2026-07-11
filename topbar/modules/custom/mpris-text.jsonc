@@ -9,8 +9,8 @@
     "markup": false,
 
     // --> left click toogle
-    "on-click": "hyprctl clients -j | jq -e '.[] | select(.class == \"Audacious\" and (.title | test(\".* - Audacious$\")) and .mapped)' >/dev/null && audtool mainwin-show off || audtool mainwin-show on", 
+    "on-click": "hyprctl clients -j | jq -e '.[] | select(.class == \"audacious\" and (.title | test(\".* - Audacious$\")) and .mapped)' >/dev/null && audtool mainwin-show off || audtool mainwin-show on", 
     "on-click-right": "audtool mainwin-show off",
-    "on-click-middle": "killall -9 audacious",
-  },
+    "on-click-middle": "killall -9 audacious"
+  }
 }

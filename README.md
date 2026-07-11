@@ -4,14 +4,18 @@
 It`s based on [mechabar](https://github.com/sejjy/mechabar) with my own modifications and customizations.  
 
 This config might two instances of waybar. It`s not default waybar file structure, so in my Hyprland autostart config I use:  
-*exec-once = waybar -c ~/.config/waybar/topbar/config.jsonc -s ~/.config/waybar/topbar/style.css &*  
-*exec-once = waybar -c ~/.config/waybar/bottombar/config.jsonc -s ~/.config/waybar/bottombar/style.css &*  
-
+```lua
+hl.on("hyprland.start", function ()
+    hl.exec_cmd("waybar -c ~/.config/waybar/topbar/config.jsonc -s ~/.config/waybar/topbar/style.css")
+    hl.exec_cmd("waybar -c ~/.config/waybar/bottombar/config.jsonc -s ~/.config/waybar/bottombar/style.css") 
+    -- ...
+)
+```
 
 # Dependencies
 ~ **Terminal:** Kitty  
 ~ **App launcher:** Wofi  
-~ **Player:** Audacious + audtool (I use GTK version from AUR)  
+~ **Player:** Audacious + audtool (I use GTK-3 version from AUR)  
 ~ **Visualizer:** Cava  
 ~ **Wallpapers:** hyprpaper + mpvpaper  
 ~ **Power plans:** powerprofilesctl + cpupower  
