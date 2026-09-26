@@ -2,8 +2,8 @@
     "custom/play-volume": {
         "exec": "echo \"  $(audtool get-volume)%\"",
         "interval": 1,
-        "on-scroll-up": "playerctl volume 0.05+",
-		"on-scroll-down": "playerctl volume 0.05-"
+        "on-scroll-up": "playerctl --player audacious volume 0.05+",
+        "on-scroll-down": "playerctl --player audacious volume 0.05-"
     },
     "custom/play-count": {
         "exec": "~/.config/waybar/scripts/audacious-count.sh",
@@ -13,7 +13,7 @@
     },
     "custom/player-list-button": {
         "on-click": "audtool jumptofile-show",
-        "format": "󱎸",//"󰲸",
+        "format": "󱎸", //"󰲸",
         "min-length": 3,
         "max-length": 3,
         "tooltip-format": "Playlist"
@@ -27,7 +27,9 @@
         "cursor": false,
         "on-scroll-up": "exec audtool playback-seek-relative -5",
         "on-scroll-down": "exec audtool playback-seek-relative +5",
-        "on-click": "exec ~/.config/waybar/scripts/player-mouse-seek.sh"
+        "on-click": "exec ~/.config/waybar/scripts/player-mouse-seek.sh",
+        "min-length": 35,
+        "max-length": 35
         //"on-click": "~/.config/waybar/scripts/player-mouse-seek.ts"
     },
     "custom/player-song-time": {

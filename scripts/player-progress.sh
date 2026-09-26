@@ -7,7 +7,7 @@ if [ -z "$TOTAL" ] || [ "$TOTAL" -eq 0 ]; then
   exit 0
 fi
 
-PERCENT=$((CURRENT * 125 / TOTAL))
+PERCENT=$((CURRENT * 111 / TOTAL))
 PROGRESS=$(printf "%*s" "$PERCENT" | tr ' ' '*')
 
 echo "{\"text\": \"$PROGRESS\"}"

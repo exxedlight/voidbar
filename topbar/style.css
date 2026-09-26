@@ -95,7 +95,8 @@
 
 #custom-mpris-text{
 	font-size: 12px;
-	font-family: "Pixelon", "Pixellari", "MesloLGSDZ Nerd Font Mono",  monospace;
+	font-family: "FantasqueSansM Nerd Font", "Pixellari", "MesloLGSDZ Nerd Font Mono", monospace;
+	font-style: italic;
 	padding: 0 3px;
 	padding-top: 4.5px;
 }
@@ -108,11 +109,10 @@
 #custom-player-list-button:hover{
 	text-shadow: none;
 	color: rgb(197, 126, 239);
-	font-size: 18px;
 	border-top: 1px solid rgb(91, 27, 150);
-	border-bottom: 1px dotted rgb(137, 23, 203);
+	/*border-bottom: 1px solid rgb(137, 23, 203);*/
 	box-shadow: 2px -2px 2px rgba(71, 21, 115, 0.474);
-	padding-right: 5px;
+	/*padding-right: 5px;*/
 }
 #custom-play-volume,
 #player-count-and-time{

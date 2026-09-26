@@ -2,8 +2,8 @@
 
 # Coords of progress module
 # Custom: see hyprctl cursorpos
-ZERO=925
-MAX=1175
+ZERO=943
+MAX=1160
 
 CURSOR_POS=$(hyprctl cursorpos)
 X=$(echo $CURSOR_POS | cut -d, -f1 | tr -d ' ')
